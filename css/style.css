@@ -1,0 +1,68 @@
+@import "basestyle.css";
+@import "smallheaderstyle.css" screen and (max-width: 45em);
+
+body {
+	background-image: url("../images/measures.jpg");
+}
+
+#code {
+	padding: 2em;
+	width: 20em;
+}
+
+#version {
+	color: #004700;
+}
+
+.inline {
+	vertical-align: top;
+	display: inline-block;
+}
+
+#hero {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+pre.prettyprint {
+	border: 1px solid #AAA !important;
+}
+
+#logo {
+	padding: 1em;
+}
+
+.bordered {
+	border: 1px solid #AAA;
+	border-radius: 5px;
+	padding: 1em;
+	margin: 0.4em;
+	width: 17.5em;
+}
+
+.bordered li {
+	margin: 0.5em;
+}
+
+/************Header**************/
+
+#header-container {
+	background-color: #004700;
+}
+
+#header-content ul li ul li {
+	background-color: #004700;
+}
+
+@media screen and (max-width: 45em) {
+
+	#header-content {
+		background-color: #004700;
+	}
+
+	#header-content ul li:hover {
+		background-color: #004700;
+	}
+}
+
+/************End Header**************/

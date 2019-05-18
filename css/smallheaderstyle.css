@@ -1,0 +1,43 @@
+/* A common style for the header with small screens */
+/* If changed, should be changed across all sites */
+
+#menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+#header-media {
+	visibility: visible;
+	opacity: 1;
+}
+
+#header-content {
+	display: none;
+	position: absolute;
+	background-color: #AA0000;
+	top: 3.4em;
+	right: 0;
+	z-index: 500;
+}
+
+#header-content ul li:hover {
+	background-color: #AA0000;
+}
+
+#header-content ul li {
+	display: block;
+	float: none;
+}
+
+#header-content ul li ul {
+	visibility: visible;
+	position: relative;
+	display: block;
+	float: none;
+	top: 0.8em;
+}
+
+#header-content ul li ul li {
+	display: block;
+	float: none;
+}

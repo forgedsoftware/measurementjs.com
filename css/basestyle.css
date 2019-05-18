@@ -1,0 +1,177 @@
+/* A common base style for all sites */
+/* If changed, should be changed across all sites */
+
+/************Reset**************/
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, input { 
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	text-rendering: optimizeLegibility;
+	font-weight: normal;
+} 
+
+ol, ul { 
+	list-style-type: none; 
+}
+
+header, footer, nav, section, article, hgroup, figure {
+	display: block;
+}
+
+legend {
+	display: none;
+}
+
+/************End Reset**************/
+
+/************Global**************/
+body { 
+	font: 100% 'Calibri', 'Lucida Grande', 'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif; 
+	color: #000;
+	background-color: #222;
+}
+
+a {
+	text-decoration: none;
+	color: #7f7f7f;
+}
+
+a:hover, a:focus {
+	color: #000;
+}
+
+h1 {	
+	font-size: 2.8em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.1em;
+	max-width: 50em;
+	margin: 0 0 1em;
+}
+
+li {
+	margin-left: 2em;
+}
+
+/************End Global**************/
+
+/************Classes**************/
+
+.icon {
+	height: 0.9em;
+	vertical-align: middle;
+	padding-bottom: 0.2em;
+	padding-right: 0.5em;
+}
+
+.container {
+	background-color: #ddd;
+	position: relative;
+	opacity: 0.95;
+	max-width: 100em;
+	margin: 2em auto;
+	padding: 2em;
+}
+
+.opTrans {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+#footer {
+	color: #888;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+/************End Classes**************/
+
+/************Header**************/
+
+#header-container {
+	color: #DDD;
+	background-color: #AA0000;
+	height: 3.4em;
+}
+
+#header-container a {
+	color: #DDD;
+}
+
+#header-media {
+	visibility: hidden;
+	position: absolute;
+	padding: 0.95em;
+	margin-left: 2em;
+	float: left;
+	opacity: 0;
+}
+
+#header-content {
+	display: block;
+	visibility: visible;
+}
+
+#header-content ul {
+	list-style-type: none;
+}
+
+#header-content ul li {
+	position: relative;
+	display: inline;
+	float: left;
+	padding: 0.95em;
+}
+
+#menu:hover, #header-media:hover, #header-content ul li:hover {
+	background-color: #333;
+}
+
+#header-content ul li ul {
+	display: none;
+	position: absolute;
+	top: 3.4em;
+	left: -2em;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#header-content ul li ul li {
+	color: #666;
+	width: 10em;
+	padding: 0.8em;
+	background-color: #AA0000;
+	display: block;
+}
+
+#header-content ul li:hover ul {
+	display: block;
+	visibility: visible;
+}
+
+#menu {
+	visibility: hidden;
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	padding: 0.4em 0.7em 0.4em 0.6em;
+	height: 2.6em;
+	cursor: pointer;
+	opacity: 0;
+}
+
+/************End Header**************/
